@@ -1,0 +1,6 @@
+##capture analog signals from a fmcw radar 2.4Ghz
+
+import subprocess
+a="arecord -D plughw:0 -d 10 -f cd ~/recpy.wav"
+subprocess.call(a,shell=True)
+
